@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Johnathan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #0f0f0f;
+            color: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h2, h3, h4 {
+            color: #47b6b0;
+        }
+
+        a {
+            color: #47b6b0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #b1d3e0;
+        }
+
+        .card {
+            background-color: #163f4d;
+            color: #f2f2f2;
+            border: none;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .btn-outline-primary {
+            color: #47b6b0;
+            border-color: #47b6b0;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #47b6b0;
+            color: #0f0f0f;
+        }
+
+        .btn-secondary {
+            background-color: #163f4d;
+            color: #f2f2f2;
+        }
+
+        .carousel-inner img {
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .navbar {
+            background-color: #0f0f0f;
+        }
+
+        .list-group-item {
+            background-color: #163f4d;
+            border: none;
+            color: #f2f2f2;
+        }
+    </style>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sinopse">Sinopse</a></li>
+                <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li>
+                <li class="nav-item"><a class="nav-link" href="#personagens">Personagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="#trilha">Curiosidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#imagens">Imagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="#curiosidades">Trilha Sonora</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li><a class="nav-link text-white" href="#sinopse">Sinopse</a></li>
+            <li><a class="nav-link text-white" href="#elenco">Elenco</a></li>
+            <li><a class="nav-link text-white" href="#personagens">Personagens</a></li>
+            <li><a class="nav-link text-white" href="#trilha">Trilha Sonora</a></li>
+            <li><a class="nav-link text-white" href="#imagens">Imagens</a></li>
+            <li><a class="nav-link text-white" href="#curiosidades">Curiosidades</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="jumbotron text-center bg-dark text-white py-5">
+    <h1 class="display-4">John Wick</h1>
+    <p class="lead">Uma história de vingança e redenção</p>
+</div>
+
+<main class="mt-5 pt-5">
+
+    <section id="sinopse" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-3">Sinopse</h2>
+                <p>
+                    John Wick é um lendário assassino de aluguel aposentado,
+                    lidando com o luto após perder o grande amor de sua vida.
+                    Quando um gângster invade sua casa, mata seu cachorro e rouba seu carro,
+                    ele é forçado a voltar à ativa e inicia sua vingança.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="poster.jpg" 
+                     alt="John Wick" class="img-fluid rounded shadow w-50">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="elenco" class="container py-5">
+        <h2 class="mb-4">Elenco</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="keanu.webp" class="card-img-top" alt="Keanu Reeves">
+                    <div class="card-body">
+                        <h5 class="card-title">Keanu Reeves</h5>
+                        <p class="card-text">John Wick</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="mcshane.webp" class="card-img-top" alt="Michael Nyqvist">
+                    <div class="card-body">
+                        <h5 class="card-title">Ian McShane</h5>
+                        <p class="card-text">Winston</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="Allen.jpg" class="card-img-top" alt="Alfie Allen">
+                    <div class="card-body">
+                        <h5 class="card-title">Alfie Allen</h5>
+                        <p class="card-text">Iosef Tarasov</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="personagens" class="container py-5">
+        <h2 class="mb-4">Personagens</h2>
+        <ul class="nav nav-tabs" id="tabPersonagens" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#wick">John Wick</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#viggo">Viggo Tarasov</button></li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="wick">
+                <p>John Wick, um lendário assassino aposentado, retorna à ação para se vingar daqueles que destruíram sua vida após a morte da esposa.</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalWick">Mais sobre Wick</button>
+            </div>
+            <div class="tab-pane fade" id="viggo">
+                <p>Viggo é um poderoso chefe da máfia russa, pai de Iosef, e tenta proteger o filho da fúria de John Wick.</p>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalWick" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">John Wick</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Conhecido no submundo como "Baba Yaga", John Wick é um dos assassinos mais temidos e respeitados. Após se aposentar por amor, sua volta é marcada por uma trilha de vingança e violência que revela sua letalidade e precisão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="trilha-sonora" class="container py-5">
+        <h2 class="mb-4">Trilha Sonora</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Think – Kaleida</span>
+                <a href="https://www.youtube.com/watch?v=2cm7MEONP48" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <img src="youtube_PNG102349.png" alt="YouTube" style="width: 24px; height: 24px;">
+                </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Story of Wick – Tyler Bates & Joel J. Richard</span>
+                <a href="https://www.youtube.com/watch?v=XEb7eGVWEJc" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <img src="youtube_PNG102349.png" alt="YouTube" style="width: 24px; height: 24px;">
+                </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Shots Fired – Tyler Bates & Joel J. Richard</span>
+                <a href="https://www.youtube.com/watch?v=JpwTx4G2EAM" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <img src="youtube_PNG102349.png" alt="YouTube" style="width: 24px; height: 24px;">
+                </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>In My Mind – M83 (remix)</span>
+                <a href="https://www.youtube.com/watch?v=kATLe0KIrZY" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <img src="youtube_PNG102349.png" alt="YouTube" style="width: 24px; height: 24px;">
+                </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Who You Talkin' to Man – Ciscandra Nostalghia</span>
+                <a href="https://www.youtube.com/watch?v=nik91HjRchI" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <img src="youtube_PNG102349.png" alt="YouTube" style="width: 24px; height: 24px;">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Seção: Imagens (Carousel) -->
+    <section id="galeria" class="container py-5">
+        <h2 class="mb-4">Imagens do filme</h2>
+        <div id="carouselJohnWick" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+    
+                <div class="carousel-item active">
+                    <img src="1.jpg" class="d-block w-50 mx-auto" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="2.jpg" class="d-block w-50 mx-auto" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="3.jpg" class="d-block w-50 mx-auto" alt="Imagem 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="4.png" class="d-block w-50 mx-auto" alt="Imagem 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="5.jpg" class="d-block w-50 mx-auto" alt="Imagem 5">
+                </div>
+    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselJohnWick" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselJohnWick" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próxima</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="curiosidades" class="container py-5">
+        <h2 class="mb-4">Curiosidades</h2>
+        <div>
+            <!-- Curiosidade 1 -->
+            <button class="btn btn-secondary mb-3" data-bs-toggle="collapse" data-bs-target="#curiosidade1">
+                Keanu Reeves fez 90% de suas cenas de ação
+            </button>
+            <div id="curiosidade1" class="collapse">
+                <div class="card card-body">
+                    O ator treinou intensamente artes marciais e tiro com armas reais para interpretar Wick com realismo.
+                </div>
+            </div>
+    
+            <!-- Curiosidade 2 -->
+            <button class="btn btn-secondary mb-3" data-bs-toggle="collapse" data-bs-target="#curiosidade2">
+                Omer Barnea, que interpretou Gregori, o homem responsável pela morte de Daisy, realmente se sentiu horrível ao filmar a cena, 
+                e a primeira coisa que ele faria assim que as câmeras parassem de filmar era acariciar e fazer carinho no precioso filhote.
+            </button>
+            <div id="curiosidade2" class="collapse">
+                <div class="card card-body">
+                    O filhote Daisy simboliza o último presente da esposa de John e serve como o principal gatilho emocional da história.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
